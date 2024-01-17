@@ -2,8 +2,9 @@
     header{
         background-color: black;
         color: white;
-        main{
-            grid-template-columns: 1fr 1fr;
-        }
     }
+    main{
+            grid-template-columns: 1fr 1fr;
+    }
+    
 }
