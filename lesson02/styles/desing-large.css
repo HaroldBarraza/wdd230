@@ -1,0 +1,26 @@
+@media (min-width: 992px)
+{
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .visual{
+        grid-column: 1;
+        width: 100%;
+        grid-row: 1;
+    }
+    .space
+    {
+        grid-column: 2;
+        width: 100%;
+        grid-row: 1;
+    }
+    .parc{
+        grid-column: 3;
+        width: 100%;
+        grid-row: 1;
+    
+    } 
+}
+

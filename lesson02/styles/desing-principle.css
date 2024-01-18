@@ -1,0 +1,40 @@
+h3{
+    background-color: rgb(2, 59, 116);
+    padding: 10px;
+    margin: 0;
+    border: 1px solid rgb(2, 59, 116);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.visual,.space, .parc {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: #ffffff 3px solid;
+    border-radius:10px;
+    font-family: "Oswald", sans-serif;
+}
+main{
+    display: grid;
+    font-family: "Open Sans", sans-serif;
+}
+img{
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+}
+p, h4, a 
+{
+    padding: 10px;
+    margin: 0;
+}
+header{
+    background-color: rgb(2, 59, 116);
+    padding: 10px;
+    margin: 0;
+    color: #ffffff;
+}
+footer{
+    background-color: rgb(2, 59, 116);
+    color: #ffffff;
+}
+
