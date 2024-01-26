@@ -87,3 +87,7 @@ footer{
     font-size: 20px;
     text-align: center;
 }
+nav::after {
+    content: '\2024';
+    margin-left: 10px;
+}

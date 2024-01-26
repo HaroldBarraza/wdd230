@@ -18,3 +18,8 @@ function updateFooter() {
 }
 
 document.addEventListener('DOMContentLoaded', updateFooter);
+
+    function toggleMobile() {
+        var mobile = document.querySelector('.mobile');
+        mobile.style.display = (mobile.style.display === 'none' || mobile.style.display === '') ? 'block' : 'none';
+    }
