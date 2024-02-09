@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var lastModifiedElement = document.getElementById("lastModified");
     var lastModifiedDate = document.lastModified;
 
@@ -18,3 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error('Error fetching weather data:', error));
 });
+
+
+
+const themetoggle = document.getElementById('checkbox-toggle');
+const body = document.body;
+
+themetoggle.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
+})
