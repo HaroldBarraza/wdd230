@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var lastModifiedElement = document.getElementById("lastModified");
     var lastModifiedDate = document.lastModified;
 
-    // Update the content dynamically
     lastModifiedElement.textContent = lastModifiedDate;
 
     var apiKey = 'eececc8fc440dba10c2cf1470581941c';
