@@ -13,14 +13,14 @@
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/mobile.css">
-    <link rel="icon" type="image/x-icon" href="images/icono.ico">
+    <link rel="icon" type="image/x-icon" href="images/AnyConv.com__Perú_Chambers_of_Commerce-removebg-previewicon.webp">
 
 </head>
 
 <body>
     <div class="background"></div>
     <header>
-        <img src="images/Perú_Chambers_of_Commerce__1_-removebg-preview.png" alt="logo">
+        <img src="images/AnyConv.com__Perú_Chambers_of_Commerce__1_-removebg-preview.webp" alt="logo">
         <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
             &#8801;
         </div>
@@ -35,10 +35,14 @@
     <main>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/machu.jpg" alt="hero">
+                <picture>
+                    <source srcset="images/small.webp" media="(max-width: 500px)">
+                    <source srcset="images/normal.webp" media="(max-width: 1000px)">
+                    <img id="hero-img" src="images/AnyConv.com__big.webp" alt="hero">
+                </picture>
             </div>
             <section id="hero-msg">
-                <a class="joinus" href="#">Join Us</a>
+                <a class="join Us" href="#">Join Us</a>
             </section>
         </div>
 
@@ -46,34 +50,35 @@
             <h3>Weather Information for Lima, Peru</h3>
             <p id="temperature"></p>
             <p id="description"></p>
+            <p id="wind-speed"></p>
+            <p id="wind-chill"></p>
         </div>
 
         <div class="members">
             <h3>Members Spotlights</h3>
             <div class="imagesspot">
-                <img class="scotiabank" src="images/scotiabank.png" alt="scotiabank" loading="lazy">
-                <img class="bcr" src="images/bcr.png" alt="bcr" loading="lazy">
-                <img class="ferreyros" src="images/ferreyros.png" alt="ferreyros" loading="lazy">
-                <img class="incamotors" src="images/incamotors.png" alt="incamotors" loading="lazy">
-                <img class="positiva" src="images/la-positiva.png" alt="positiva" loading="lazy">
-                <img class="libertador" src="images/libertador.png" alt="libertador" loading="lazy">
-                <img class="construcsur" src="images/construcsur.png" alt="construcsur" loading="lazy">
-                <img class="mojsa" src="images/mojsa.png" alt="mojsa" loading="lazy">
-                <img class="qalasaya" src="images/qalasaya.png" alt="qalasaya" loading="lazy">
-                <img class="xima" src="images/xima.png" alt="xima" loading="lazy">
+                <img class="scotiabank" src="images/AnyConv.com__scotiabank.webp" alt="scotiabank" loading="lazy">
+                <img class="bcr" src="images/bcr.webp" alt="bcr" loading="lazy">
+                <img class="ferreyros" src="images/ferreyros.webp" alt="ferreyros" loading="lazy">
+                <img class="incamotors" src="images/incamotors.webp" alt="incamotors" loading="lazy">
+                <img class="positiva" src="images/la-positiva.webp" alt="positiva" loading="lazy">
+                <img class="libertador" src="images/libertador.webp" alt="libertador" loading="lazy">
+                <img class="construcsur" src="images/construcsur.webp" alt="construcsur" loading="lazy">
+                <img class="mojsa" src="images/AnyConv.com__mojsa.webp" alt="mojsa" loading="lazy">
+                <img class="qalasaya" src="images/qalasaya.webp" alt="qalasaya" loading="lazy">
+                <img class="xima" src="images/AnyConv.com__xima.webp" alt="xima" loading="lazy">
             </div>
         </div>
         <div class="map">
             <h3>Our Location</h3>
-            <iframe width="90%" height="500"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6248.091372371005!2d-77.0397273!3d-12.0681435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8eb9089e8bf%3A0x4cf2d9cb4c65de98!2sAV.%20AREQUIPA%20N%C2%BA%20398%2C%20LIMA%20%E2%80%93%20PER%C3%9A!5e0!3m2!1sen!2sus!4v1611854919089!5m2!1sen!2sus"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6248.091372371005!2d-77.0397273!3d-12.0681435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8eb9089e8bf%3A0x4cf2d9cb4c65de98!2sAV.%20AREQUIPA%20N%C2%BA%20398%2C%20LIMA%20%E2%80%93%20PER%C3%9A!5e0!3m2!1sen!2sus!4v1611854919089!5m2!1sen!2sus"
                 allowfullscreen="" loading="lazy">
             </iframe>
 
         </div>
     </main>
     <footer>
-        <img class="peru" src="images/Perú_Chambers_of_Commerce__1_-removebg-preview.png" alt="logo">
+        <img class="peru" src="images/AnyConv.com__Perú_Chambers_of_Commerce__1_-removebg-preview.webp" alt="logo">
         <div class="info">
             <h4>Perú Chambers of Commerce</h4>
             <h4>The Peruvian Chamber of Commerce is a national organization with political, economic and administrative
@@ -86,16 +91,17 @@
         </div>
         <div class="social">
             <a href="https://www.facebook.com/" target="_blank">
-                <img src="images/facebook(1).png" alt="Facebook icon">
+                <img src="images/AnyConv.com__facebook(1).webp" alt="Facebook icon">
             </a>
             <a href="https://www.twitter.com/" target="_blank">
-                <img src="images/twitter(1).png" alt="Twitter icon">
+                <img src="images/AnyConv.com__twitter(1).webp" alt="Twitter icon">
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <img src="images/instagram(1).png" alt="Instagram icon">
+                <img src="images/AnyConv.com__instagram(1).webp" alt="Instagram icon">
             </a>
         </div>
     </footer>
+    <script src="scripts/windchill.js" defer></script>
     <script src="scripts/script.js"></script>
 </body>
 

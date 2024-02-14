@@ -12,9 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             var temperatureElement = document.getElementById("temperature");
             var descriptionElement = document.getElementById("description");
+            var windspeedElement = document.getElementById('wind-speed');
 
-            temperatureElement.textContent = `Temperature: ${data.main.temp} °C`;
+            var temperatureFahrenheit = (data.main.temp * 9/5) + 32;
+
+            temperatureElement.textContent = `Temperature: ${temperatureFahrenheit.toFixed(1)} °F`;
             descriptionElement.textContent = `Description: ${data.weather[0].description}`;
+            windspeedElement.textContent = `Wind Speed ${data.wind.speed} m/s`;
         })
         .catch(error => console.error('Error fetching weather data:', error));
 });

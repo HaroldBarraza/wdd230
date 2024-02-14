@@ -23,3 +23,8 @@ document.addEventListener('DOMContentLoaded', updateFooter);
         var mobile = document.querySelector('.mobile');
         mobile.style.display = (mobile.style.display === 'none' || mobile.style.display === '') ? 'block' : 'none';
     }
+
+function toggleNav() {
+    var nav = document.getElementById('mobileNav');
+    nav.classList.toggle('show');
+}

@@ -43,7 +43,7 @@ nav a:hover {
 
 #hero-img {
     width: 100%;
-    height: 100%;
+    height: auto;
 
 }
 
@@ -241,6 +241,11 @@ footer a {
     padding-bottom: 20px;
 }
 
+iframe {
+    width: 90%;
+    height: 500px;
+}
+
 
 
 
@@ -333,11 +338,11 @@ footer a {
     background-color: black;
 }
 
-.dark-mode h3{
+.dark-mode h3 {
     color: rgb(203, 21, 8);
 }
 
-.dark-mode p{
+.dark-mode p {
     color: rgb(203, 21, 8);
 }
 
@@ -354,10 +359,11 @@ footer a {
     color: rgb(203, 21, 8);
 }
 
-.dark-mode header{
+.dark-mode header {
     background-color: black;
     color: rgb(203, 21, 8);
 }
+
 .dark-mode nav a {
     color: rgb(203, 21, 8);
     text-decoration: none;
@@ -371,12 +377,13 @@ footer a {
     color: rgb(255, 255, 255);
 }
 
-.dark-mode footer{
+.dark-mode footer {
     background-color: black;
     border-color: aliceblue;
     border-width: 5px;
     border-style: solid;
 }
+
 .dark-mode footer div {
     color: rgb(203, 21, 8);
 }
