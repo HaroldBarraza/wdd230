@@ -19,12 +19,20 @@ function updateFooter() {
 
 document.addEventListener('DOMContentLoaded', updateFooter);
 
-    function toggleMobile() {
-        var mobile = document.querySelector('.mobile');
-        mobile.style.display = (mobile.style.display === 'none' || mobile.style.display === '') ? 'block' : 'none';
-    }
+function toggleMobile() {
+    var mobile = document.querySelector('.mobile');
+    mobile.style.display = (mobile.style.display === 'none' || mobile.style.display === '') ? 'block' : 'none';
+}
 
 function toggleNav() {
     var nav = document.getElementById('mobileNav');
     nav.classList.toggle('show');
 }
+
+function ViewCount() {
+    let ViewCount = localStorage.getItem('viewCount') || 0;
+    ViewCount = parseInt(ViewCount) + 1;
+    localStorage.setItem('viewCount', ViewCount);
+    document.getElementById('count').textContent = ViewCount;
+}
+ViewCount();

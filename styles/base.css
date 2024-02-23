@@ -132,3 +132,7 @@ nav {
     font-size: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
 }
+
+a{
+    text-align: center;
+}

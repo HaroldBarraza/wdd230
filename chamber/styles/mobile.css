@@ -25,16 +25,23 @@
     main {
         padding: 10px;
     }
-    footer{
+
+    footer {
         font-size: 10px;
     }
+
     .social {
         grid-column: 1/4;
         grid-row: 2;
 
     }
+
     .info {
         grid-column: 2/5;
         text-align: center;
+    }
+
+    .box {
+        display: block;
     }
 }
