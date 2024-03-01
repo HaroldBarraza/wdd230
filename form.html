@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Form Page</h1>
+        <form id="myform" action="#" method="post">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="username">Password</label>
+                <input type="password" id="password" name="password" ´pattern="[A-Za-z0-9] {8,}"
+                    title="password must be 8 characters" required>
+            </div>
+            <div>
+                <label for="validator">Type your password again</label>
+                <input type="password" id="confirmpassword" name="confirmpassword" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your BYU email address"
+                    title="A valid byui.edu email address" pattern=".+@byui\.edu" required>
+            </div>
+            <div>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5" />
+                    <label for="star-a"></label>
+
+                    <input type="radio" name="stars" id="star-b" value="4" />
+                    <label for="star-b"></label>
+
+                    <input type="radio" name="stars" id="star-c" value="3" />
+                    <label for="star-c"></label>
+
+                    <input type="radio" name="stars" id="star-d" value="2" />
+                    <label for="star-d"></label>
+
+                    <input type="radio" name="stars" id="star-e" value="1" />
+                    <label for="star-e"></label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
