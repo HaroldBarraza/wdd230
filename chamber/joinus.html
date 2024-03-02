@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/mobile.css">
     <link rel="icon" type="image/x-icon" href="images/AnyConv.com__Perú_Chambers_of_Commerce-removebg-previewicon.webp">
-
 </head>
 
 <body>
@@ -33,52 +32,58 @@
         <input type="checkbox" class="theme-checkbox" id="checkbox-toggle">
     </header>
     <main>
-        <div id="hero">
-            <div id="hero-box">
-                <picture>
-                    <source srcset="images/small.webp" media="(max-width: 500px)">
-                    <source srcset="images/normal.webp" media="(max-width: 1000px)">
-                    <img id="hero-img" src="images/machu.webp" alt="hero">
-                </picture>
+        <div class="membership-container">
+            <form action="thankyou.html" method="get" class="membership-form">
+                <h1>Join Us</h1>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+
+                <label for="position">Position</label>
+                <input type="text" id="position" name="position" pattern="[A-Za-z\-]{7,}"
+                    title="Type your title or position within your organization must be at least 7 characters long and contain only letters, hyphens and spaces."
+                    required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@example.com">
+
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" required>
+
+                <label for="organization">Organization</label>
+                <input type="text" id="organization" name="organization" required>
+
+                <label for="membershiplevel">Membership Level</label>
+                <select name="membershiplevel" id="membershiplevel">
+                    <option value="NP Membership">NP Membership</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select><br>
+
+                <label for="description">Organization Description:</label><br>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+
+                <input type="hidden" id="time" name="time">
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="membership-benefits">
+                <div class="membership-level">
+                    <h2>Membership Level Benefits</h2>
+                    <p>NP Membership: No fee, basic benefits</p>
+                    <p>Bronze Membership: Increased benefits at a moderate cost</p>
+                    <p>Silver Membership: More benefits than Bronze at a higher cost</p>
+                    <p>Gold Membership: Highest level of benefits at the highest cost</p>
+                </div>
             </div>
-            <section id="hero-msg">
-                <a class="join Us" href="#">Join Us</a>
-            </section>
         </div>
-
-        <div class="weather-info">
-            <h3>Weather Information for Lima, Peru</h3>
-            <p id="temperature"></p>
-            <p id="description"></p>
-            <p id="wind-speed"></p>
-            <p id="wind-chill"></p>
-        </div>
-
-        <div class="members">
-            <h3>Members Spotlights</h3>
-            <div class="imagesspot">
-                <img class="scotiabank" src="images/AnyConv.com__scotiabank.webp" alt="scotiabank" loading="lazy">
-                <img class="bcr" src="images/bcr.webp" alt="bcr" loading="lazy">
-                <img class="ferreyros" src="images/ferreyros.webp" alt="ferreyros" loading="lazy">
-                <img class="incamotors" src="images/incamotors.webp" alt="incamotors" loading="lazy">
-                <img class="positiva" src="images/la-positiva.webp" alt="positiva" loading="lazy">
-                <img class="libertador" src="images/libertador.webp" alt="libertador" loading="lazy">
-                <img class="construcsur" src="images/construcsur.webp" alt="construcsur" loading="lazy">
-                <img class="mojsa" src="images/AnyConv.com__mojsa.webp" alt="mojsa" loading="lazy">
-                <img class="qalasaya" src="images/qalasaya.webp" alt="qalasaya" loading="lazy">
-                <img class="xima" src="images/AnyConv.com__xima.webp" alt="xima" loading="lazy">
-            </div>
-        </div>
-        <div class="map">
-            <h3>Our Location</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6248.091372371005!2d-77.0397273!3d-12.0681435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8eb9089e8bf%3A0x4cf2d9cb4c65de98!2sAV.%20AREQUIPA%20N%C2%BA%20398%2C%20LIMA%20%E2%80%93%20PER%C3%9A!5e0!3m2!1sen!2sus!4v1611854919089!5m2!1sen!2sus"
-                allowfullscreen="" loading="lazy">
-            </iframe>
-
-
-        </div>
+        <input type="hidden" id="time" name="time">
     </main>
+
     <footer>
         <img class="peru" src="images/AnyConv.com__Perú_Chambers_of_Commerce__1_-removebg-preview.webp" alt="logo">
         <div class="info">

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var descriptionElement = document.getElementById("description");
             var windspeedElement = document.getElementById('wind-speed');
 
-            var temperatureFahrenheit = (data.main.temp * 9/5) + 32;
+            var temperatureFahrenheit = (data.main.temp * 9 / 5) + 32;
 
             temperatureElement.textContent = `Temperature: ${temperatureFahrenheit.toFixed(1)} °F`;
             descriptionElement.textContent = `Description: ${data.weather[0].description}`;
@@ -31,3 +31,9 @@ const body = document.body;
 themetoggle.addEventListener('change', () => {
     body.classList.toggle('dark-mode');
 })
+
+
+var currentTime = Date.now();
+document.getElementById("time").value = currentTime;
+
+
