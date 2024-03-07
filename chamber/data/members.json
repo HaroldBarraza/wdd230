@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Scotibank",
+        "address": "JR. CARABAYA N° 543",
+        "phone numbers": "01 311 6000",
+        "website": "https://www.scotiabank.com.pe/Personas/Default",
+        "image": "images/AnyConv.com__scotiabank.webp",
+        "membership": "Gold"
+    },
+    {
+        "name": "Ferreyro",
+        "address": "JR. CRISTÓBAL DE PERALTA NORTE 820",
+        "phone numbers": "+5116264000",
+        "website": "https://www.ferreyros.com.pe/",
+        "image": "images/ferreyros.webp",
+        "membership": "Silver"
+    },
+    {
+        "name": "Incamotors",
+        "address": "Av. Tacna y Arica 155",
+        "phone numbers": "054 222 200",
+        "website": "https://www.incamotors.com.pe/",
+        "image": "images/incamotors.webp",
+        "membership": "Silver"
+    },
+    {
+        "name": "La Positiva Seguros",
+        "address": "Calle Francisco Masías 370",
+        "phone numbers": "511-5186500",
+        "website": "https://www.lapositiva.com.pe/wps/portal/corporativo/home",
+        "image": "images/la-positiva.webp",
+        "membership": "Gold"
+    },
+    {
+        "name": "Libertador Hoteles",
+        "address": "Las Begonia 450",
+        "phone numbers": "01 311 6000",
+        "website": "https://www.libertador.com.pe/",
+        "image": "images/libertador.webp",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Construc Sur",
+        "address": "Av. República de Argentina H -21",
+        "phone numbers": "+51 994369917",
+        "website": "https://www.construcsurperu.com/",
+        "image": "images/construcsur.webp",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Mojsa",
+        "address": "Jr Lima Nº 635",
+        "phone numbers": "+51 363182",
+        "website": "https://mojsarestaurante.com/es/",
+        "image": "images/AnyConv.com__mojsa.webp",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Xima Hotels",
+        "address": " Av. El Sol 1010",
+        "phone numbers": "+51 84 488 031",
+        "website": "https://www.ximahotels.com/",
+        "image": "images/AnyConv.com__xima.webp",
+        "membership": "Silver"
+    }
+]

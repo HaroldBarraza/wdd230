@@ -1,0 +1,17 @@
+{
+    "lesson": [
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson02/desing-principles.html",
+                    "title": "Desing Principles Document"
+                }
+            ]
+        }
+    ]
+}

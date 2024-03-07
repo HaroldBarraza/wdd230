@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/mobile.css">
     <link rel="icon" type="image/x-icon" href="images/AnyConv.com__Perú_Chambers_of_Commerce-removebg-previewicon.webp">
+
 </head>
 
 <body>
@@ -32,58 +33,14 @@
         <input type="checkbox" class="theme-checkbox" id="checkbox-toggle">
     </header>
     <main>
-        <div class="membership-container">
-            <form action="thankyou.html" method="get" class="membership-form">
-                <h1>Join Us</h1>
-                <label for="firstname">First Name</label>
-                <input type="text" id="firstname" name="firstname" required>
-
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" required>
-
-                <label for="position">Position</label>
-                <input type="text" id="position" name="position" pattern="[A-Za-z\-]{7,}"
-                    title="Type your title or position within your organization must be at least 7 characters long and contain only letters, hyphens and spaces."
-                    required>
-
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="example@example.com">
-
-                <label for="phone">Phone</label>
-                <input type="tel" name="phone" id="phone" required>
-
-                <label for="organization">Organization</label>
-                <input type="text" id="organization" name="organization" required>
-
-                <label for="membershiplevel">Membership Level</label>
-                <select name="membershiplevel" id="membershiplevel">
-                    <option value="NP Membership">NP Membership</option>
-                    <option value="Bronze Membership">Bronze Membership</option>
-                    <option value="Silver Membership">Silver Membership</option>
-                    <option value="Gold Membership">Gold Membership</option>
-                </select><br>
-
-                <label for="description">Organization Description:</label><br>
-                <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
-
-                <input type="hidden" id="time" name="time">
-
-                <button type="submit">Submit</button>
-            </form>
-
-            <div class="membership-benefits">
-                <div class="membership-level">
-                    <h2>Membership Level Benefits</h2>
-                    <p>NP Membership: No fee, basic benefits</p>
-                    <p>Bronze Membership: Increased benefits at a moderate cost</p>
-                    <p>Silver Membership: More benefits than Bronze at a higher cost</p>
-                    <p>Gold Membership: Highest level of benefits at the highest cost</p>
-                </div>
-            </div>
+        <div id="view-toggle">
+            <button id="grid">Card view</button>
+            <button id="list">List viewport</button>
         </div>
-        <input type="hidden" id="time" name="time">
+        <div id="member-container" class="grid">
+            
+        </div>
     </main>
-
     <footer>
         <img class="peru" src="images/AnyConv.com__Perú_Chambers_of_Commerce__1_-removebg-preview.webp" alt="logo">
         <div class="info">
@@ -110,6 +67,8 @@
     </footer>
     <script src="scripts/windchill.js" defer></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/members.js"></script>
+    <script src="data/members.json"></script>
 </body>
 
 </html>

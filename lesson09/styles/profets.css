@@ -1,0 +1,40 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    box-shadow: 0 0 15px 10px grey;
+    background-color: grey;
+}
+
+section {
+    background-color: #094d89;
+    text-align: center;
+    border-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #094d89;
+    padding: 20px 20px 20px 20px;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #cards {
+        display: block;
+    }
+}
