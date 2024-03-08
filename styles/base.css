@@ -133,7 +133,7 @@ nav {
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
 }
 
-a{
+a {
     text-align: center;
 }
 
@@ -146,27 +146,43 @@ a{
 
 
 
-/* Estilos para los enlaces generados dinámicamente */
 
-/* Contenedor principal */
-#links-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px; /* Espacio entre elementos */
+
+
+
+.links {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Estilos para cada enlace */
-#links-container a {
-    display: block;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+.links h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.links #links-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.links #links-container>div {
+    margin-bottom: 20px;
+}
+
+.links #links-container h3 {
+    margin-bottom: 5px;
+}
+
+.links #links-container ul {
+    padding-left: 20px;
+}
+
+.links #links-container li {
+    list-style: none;
+}
+
+.links #links-container a {
     text-decoration: none;
     color: #333;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-#links-container a:hover {
-    background-color: #ddd;
 }
