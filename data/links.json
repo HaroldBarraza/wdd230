@@ -1,15 +1,73 @@
 {
-    "lesson": [
+    "lessons": [
+        { 
+            "lesson":"00",
+            "links":[
+                {
+                    "url":"lesson/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url":"lesson/responsive-imágenes.html",
+                    "title": "Responsive"
+                }
+            ]
+        },
         {
-            "lesson": "02",
+            "lesson": "01",
             "links": [
                 {
                     "url": "lesson01/media-query.html",
                     "title": "Media Queries"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/desing-principle.html",
+                    "title": "Desing Principle"
                 },
                 {
-                    "url": "lesson02/desing-principles.html",
-                    "title": "Desing Principles Document"
+                    "url": "lesson02/desing.html",
+                    "title": "Desing"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber site plan"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links":[
+                {
+                    "url": "lesson05/dom.html",
+                    "title": "BOM"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links":[
+                {
+                    "url":"lesson05/bom.html",
+                    "title":"BOM2"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links":[
+                {
+                    "url":"lesson09/profets.html",
+                    "title": "Profets"
                 }
             ]
         }

@@ -136,3 +136,37 @@ nav {
 a{
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+/* Estilos para los enlaces generados dinámicamente */
+
+/* Contenedor principal */
+#links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Espacio entre elementos */
+}
+
+/* Estilos para cada enlace */
+#links-container a {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#links-container a:hover {
+    background-color: #ddd;
+}
