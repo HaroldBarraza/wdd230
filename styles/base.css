@@ -41,7 +41,10 @@ nav a {
 }
 
 .home h2 {
-    text-align: center;
+    margin: 0;
+    padding: 0.25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
 }
 
@@ -136,19 +139,6 @@ nav {
 a {
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .links {
     max-width: 800px;
