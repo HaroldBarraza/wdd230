@@ -46,6 +46,7 @@ nav a {
     font-weight: 700;
     font-size: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    text-align: center;
 }
 
 h3 {
@@ -175,4 +176,22 @@ a {
 .links #links-container a {
     text-decoration: none;
     color: #333;
+}
+
+
+.weather-info {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.information {
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+#counts ul {
+    border-style: hidden;
 }

@@ -156,6 +156,7 @@ h3,
 
 .weather-info h3 {
     text-transform: uppercase;
+    grid-column: 1/5;
 }
 
 .weather-info {
@@ -164,6 +165,9 @@ h3,
     border-style: solid;
     margin-top: 20px;
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:75px 1fr;
 }
 
 footer {
@@ -640,4 +644,15 @@ button:hover {
 
 .member p {
     margin-bottom: 5px;
+}
+
+.weather {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.forecast-container {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

@@ -1,39 +1,87 @@
 document.addEventListener("DOMContentLoaded", function () {
+    var timeElement = document.getElementById("time");
+    if (timeElement) {
+        var currentTime = Date.now();
+        timeElement.value = currentTime;
+    }
+
     var lastModifiedElement = document.getElementById("lastModified");
     var lastModifiedDate = document.lastModified;
-
     lastModifiedElement.textContent = lastModifiedDate;
 
-    var apiKey = 'eececc8fc440dba10c2cf1470581941c';
-    var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Lima,pe&appid=${apiKey}&units=metric`;
 
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            var temperatureElement = document.getElementById("temperature");
-            var descriptionElement = document.getElementById("description");
-            var windspeedElement = document.getElementById('wind-speed');
+    const themetoggle = document.getElementById('checkbox-toggle');
+    const body = document.body;
 
-            var temperatureFahrenheit = (data.main.temp * 9 / 5) + 32;
+    themetoggle.addEventListener('change', () => {
+        body.classList.toggle('dark-mode');
+    })
 
-            temperatureElement.textContent = `Temperature: ${temperatureFahrenheit.toFixed(1)} °F`;
-            descriptionElement.textContent = `Description: ${data.weather[0].description}`;
-            windspeedElement.textContent = `Wind Speed ${data.wind.speed} m/s`;
-        })
-        .catch(error => console.error('Error fetching weather data:', error));
-});
+    var welcome = document.getElementById("banner");
+    var close = document.getElementById("close");
+    var date = new Date();
+    var day = date.getDay();
 
+    if (day >= 1 && day <= 3) {
+        welcome.style.display = "block";
+    }
 
-
-const themetoggle = document.getElementById('checkbox-toggle');
-const body = document.body;
-
-themetoggle.addEventListener('change', () => {
-    body.classList.toggle('dark-mode');
+    close.addEventListener("click", function () {
+        welcome.style.display = "none";
+    })
 })
 
 
-var currentTime = Date.now();
-document.getElementById("time").value = currentTime;
+const appid = 'eececc8fc440dba10c2cf1470581941c';
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=-12.04&lon=-77.04&units=metric&appid=${appid}`;
 
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayResults(data);
+        }
+        else {
+            throw Error(await response.text());
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+apiFetch();
+
+function displayResults(data) {
+    const currentWeather = data.list[0];
+    const currentTemp = currentWeather.main.temp.toFixed(0);
+    const weatherDesc = currentWeather.weather[0].description;
+    const weatherIcon = currentWeather.weather[0].icon;
+
+    document.getElementById('currentTemp').innerHTML = `Temperature: ${currentTemp}°C`;
+
+    document.getElementById('weatherDesc').textContent = `Descrption: ${weatherDesc}`;
+
+    const iconUrl = `https://openweathermap.org/img/w/${weatherIcon}.png`;
+    const weatherIconElement = document.getElementById('weatherIcon');
+    weatherIconElement.setAttribute('src', iconUrl);
+    weatherIconElement.setAttribute('alt', weatherDesc);
+
+    for (let i = 1; i <= 3; i++) {
+        const forecast = data.list[i];
+        const forecastDate = new Date(forecast.dt * 1000);
+        const forecastDay = forecastDate.toLocaleDateString('en-US', { weekday: 'long' });
+        const forecastTemp = forecast.main.temp.toFixed(0);
+        const forecastDesc = forecast.weather[0].description;
+        const forecastIcon = forecast.weather[0].icon;
+
+        document.getElementById(`forecast-day${i}-temp`).textContent = `Temperature ${forecastTemp}°C`;
+        document.getElementById(`forecast-day${i}-desc`).textContent = `Description: ${forecastDesc}`;
+
+        const forecastIconUrl = `https://openweathermap.org/img/w/${forecastIcon}.png`;
+        const forecastIconElement = document.getElementById(`forecast-day${i}-icon`);
+        forecastIconElement.setAttribute('src', forecastIconUrl);
+        forecastIconElement.setAttribute('alt', forecastDesc);
+    }
+}
 

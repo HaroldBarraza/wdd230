@@ -33,6 +33,10 @@
         <input type="checkbox" class="theme-checkbox" id="checkbox-toggle">
     </header>
     <main>
+        <div id="banner">
+            <p>Welcome to Perú Chamber, we invited you to disover our plans</p>
+            <button id="close">Close</button>
+        </div>
         <div id="hero">
             <div id="hero-box">
                 <picture>
@@ -48,10 +52,28 @@
 
         <div class="weather-info">
             <h3>Weather Information for Lima, Peru</h3>
-            <p id="temperature"></p>
-            <p id="description"></p>
-            <p id="wind-speed"></p>
-            <p id="wind-chill"></p>
+            <div id="weather">
+                <p id="currentTemp"></p>
+                <img id="weatherIcon" src="" alt="">
+                <p id="weatherDesc"></p>
+            </div>
+            <div class="forecast-container">
+                <div class="forecast" id="forecast-day1">
+                    <p id="forecast-day1-temp"></p>
+                    <img id="forecast-day1-icon" src="" alt="">
+                    <p id="forecast-day1-desc"></p>
+                </div>
+                <div class="forecast" id="forecast-day2">
+                    <p id="forecast-day2-temp"></p>
+                    <img id="forecast-day2-icon" src="" alt="">
+                    <p id="forecast-day2-desc"></p>
+                </div>
+                <div class="forecast" id="forecast-day3">
+                    <p id="forecast-day3-temp"></p>
+                    <img id="forecast-day3-icon" src="" alt="">
+                    <p id="forecast-day3-desc"></p>
+                </div>
+            </div>
         </div>
 
         <div class="members">
