@@ -167,7 +167,7 @@ h3,
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:75px 1fr;
+    grid-template-rows: 75px 1fr;
 }
 
 footer {
@@ -655,4 +655,25 @@ button:hover {
     grid-column: 2/5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+#banner {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    display: none;
+}
+
+#close {
+    float: right;
+    cursor: pointer;
+    color: #ff0000;
+
 }
