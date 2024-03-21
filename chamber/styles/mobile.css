@@ -22,6 +22,11 @@
         display: block;
     }
 
+    #mainmenu {
+        display: none;
+        flex-direction: column;
+    }
+
     main {
         padding: 10px;
     }

@@ -83,5 +83,15 @@ function displayResults(data) {
         const forecastIconElement = document.getElementById(`forecast-day${i}-icon`);
         forecastIconElement.setAttribute('src', forecastIconUrl);
         forecastIconElement.setAttribute('alt', forecastDesc);
-    }
-}
+    };
+};
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburguer = document.querySelector('.mobile-menu-icon');
+    const mainmenu = document.getElementById('main-menu');
+
+    hamburguer.addEventListener('click', function () {
+        mainmenu.classList.toggle('active');
+    });
+});
