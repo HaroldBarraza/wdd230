@@ -66,19 +66,32 @@
                 <label for="description">Organization Description:</label><br>
                 <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
 
-                <input type="hidden" id="time" name="time">
-
                 <button type="submit">Submit</button>
             </form>
 
             <div class="membership-benefits">
-                <div class="membership-level">
-                    <h2>Membership Level Benefits</h2>
-                    <p>NP Membership: No fee, basic benefits</p>
-                    <p>Bronze Membership: Increased benefits at a moderate cost</p>
-                    <p>Silver Membership: More benefits than Bronze at a higher cost</p>
-                    <p>Gold Membership: Highest level of benefits at the highest cost</p>
-                </div>
+                <table class="membership-level">
+                    <tr>
+                        <td style="background-color: rgb(203, 21, 8); color: aliceblue">Membership Level</td>
+                        <td style="background-color: rgb(203, 21, 8); color: aliceblue;">Benefits</td>
+                    </tr>
+                    <tr>
+                        <td>NP Membership:</td>
+                        <td>No fee, basic benefits</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(205, 127, 50);">Bronze Membership:</td>
+                        <td>Increased benefits at a moderate cost</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(192,192,192);">Silver Membership:</td>
+                        <td>More benefits than Bronze at a higher cost</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #FFD700;">Gold Membership:</td>
+                        <td>Highest level of benefits at the highest cost</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <input type="hidden" id="time" name="time">

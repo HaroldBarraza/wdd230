@@ -44,4 +44,12 @@
     .box {
         display: block;
     }
+
+    .forecast-container {
+        display: block;
+    }
+
+    .weather-info {
+        display: block;
+    }
 }
