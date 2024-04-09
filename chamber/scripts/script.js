@@ -88,10 +88,13 @@ function displayResults(data) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const hamburguer = document.querySelector('.mobile-menu-icon');
-    const mainmenu = document.getElementById('main-menu');
+    var menuIcon = document.querySelector('.mobile-menu-icon');
+    var menu = document.querySelector('.main-menu');
 
-    hamburguer.addEventListener('click', function () {
-        mainmenu.classList.toggle('active');
-    });
+    function toggleMenu(event) {
+        menu.classList.toggle('is_active');
+        event.preventDefault();
+    }
+
+    menuIcon.addEventListener('click', toggleMenu);
 });
