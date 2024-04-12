@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/normalize.css">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/reservation.css">
+<link rel="stylesheet" href="style/mobile.css">
+
+</head>
+<body>
+    <header>
+        <div id="temperature-message" class="message">
+            <span id="close-message" class="close-btn">&times;</span>
+            <p id="max-temp-message">Today's Max Temperature: Loading...</p>
+         </div>
+         <div id="logo">
+            <img class="log" src="images/logo.png" alt="logo">
+         </div>        
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Make a Reservation</h1>
+        <form id="reservation-form" class="reservation-login-box">
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="period">Period:</label>
+                <select id="period" name="period" required>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rental-type">Rental Type:</label>
+                <input type="text" id="rental-type" name="rental-type" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <small>Format: 123-456-7890</small>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="origin">Origin State/Country:</label>
+                <input type="text" id="origin" name="origin" required>
+            </div>
+            <div class="form-group">
+                <label for="cruise-line">Cruise Line (if applicable):</label>
+                <input type="text" id="cruise-line" name="cruise-line">
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Special Accommodations/Comments:</label>
+                <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+            </div>
+            <div class="button">
+                <a href="reservastion.html">Sumbit</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="myname">
+            <h4>©2024 | Harold Barraza Duran |</h4>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/AnyConv.com__facebook(1).webp" alt="Facebook icon">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/AnyConv.com__twitter(1).webp" alt="Twitter icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/AnyConv.com__instagram(1).webp" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

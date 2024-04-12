@@ -1,0 +1,47 @@
+{
+    "rentals": [
+      {
+        "type": "Honda Metro Scooter",
+        "image": "images/metro.webp",
+        "max_persons": 1,
+        "half_day_price": 20,
+        "full_day_price": 30
+      },
+      {
+        "type": "Honda Dio Scooter",
+        "image": "images/dio.webp",
+        "max_persons": 2,
+        "half_day_price": 30,
+        "full_day_price": 40
+      },
+      {
+        "type": "Honda PCX150 Scooter",
+        "image": "images/pcx.webp",
+        "max_persons": 2,
+        "half_day_price": 40,
+        "full_day_price": 50
+      },
+      {
+        "type": "ATV Honda Pioneer",
+        "image": "images/pioner.webp",
+        "max_persons": 4,
+        "half_day_price": 50,
+        "full_day_price": 70
+      },
+      {
+        "type": "Jeep Wrangler - 4 door with A/C",
+        "image": "images/doors.webp",
+        "max_persons": 5,
+        "half_day_price": 70,
+        "full_day_price": 100
+      },
+      {
+        "type": "Jeep Wrangler - 2 door",
+        "image": "images/door.webp",
+        "max_persons": 4,
+        "half_day_price": 60,
+        "full_day_price": 85
+      }
+    ]
+  }
+  

@@ -1,0 +1,81 @@
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .button a {
+        padding: 10px 20px;
+        margin-top: 30px;
+    }
+    .map{
+        display: block;
+    }
+    .contact-info {
+        width: 90%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .contact-form {
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .button a {
+        display: inline-block;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        background-color: #c5962d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .button a:hover {
+        background-color: #05487c;
+    }
+    form{
+        width: 100%
+    }
+    #hero-img{
+        height: 100%;
+    }
+    #hero{
+        margin-top: -170px;
+    }
+    #msg h1{
+        font-size: 30px;
+        color: aliceblue;
+    }
+    .button a{
+        padding: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}

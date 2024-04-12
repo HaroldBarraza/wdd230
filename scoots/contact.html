@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/normalize.css">
+<link rel="stylesheet" href="style/reservation.css">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/mobile.css">
+
+</head>
+<body>
+    <header>
+        <div id="temperature-message" class="message">
+            <span id="close-message" class="close-btn">&times;</span>
+            <p id="max-temp-message">Today's Max Temperature: Loading...</p>
+         </div>
+         <div id="logo">
+            <img class="log" src="images/logo.png" alt="logo">
+         </div>        
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Feel free to reach out to us for any inquiries or questions you may have. We are here to assist you!</p>
+                <p>Whether you have questions about our services, want to make a reservation, or just want to say hello, we'd love to hear from you.</p>
+                <div class="map">
+                    <div class="address">
+                        <h3>Main Location:</h3>
+                        <p>123 Main Street, Cozumel, Q.R., Mexico</p>
+                        <iframe id="one" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.0400672847586!2d-86.9755882!3d20.4757539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5d9eeeb157df%3A0x1cf0667d9331cd1d!2sCozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1649922825359!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="address1">
+                        <h3>Secondary Location:</h3>
+                        <p>456 Second Avenue, Cozumel, Q.R., Mexico</p>
+                        <iframe id="two" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.9717246824473!2d-86.9734582!3d20.4765797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5d9eedefc3e5%3A0x4548a62320091f3!2sUnnamed%20Road%2C%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1649922776830!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="button">
+                        <a href="reservastion.html">Send a Messange</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer>
+        <div class="myname">
+            <h4>©2024 | Harold Barraza Duran |</h4>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/AnyConv.com__facebook(1).webp" alt="Facebook icon">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/AnyConv.com__twitter(1).webp" alt="Twitter icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/AnyConv.com__instagram(1).webp" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

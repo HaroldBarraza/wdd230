@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/normalize.css">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/mobile.css">
+
+</head>
+<body>
+    <header>
+        <div id="temperature-message" class="message">
+            <span id="close-message" class="close-btn">&times;</span>
+            <p id="max-temp-message">Today's Max Temperature: Loading...</p>
+         </div>
+         <div id="logo">
+            <img class="log" src="images/logo.png" alt="logo">
+         </div>        
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <class id="hero">
+            <div id="hero-box">
+                <picture>
+                    <source srcset="images/hero.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero.webp" media="(max-width: 1000px)">
+                    <img id="hero-img" src="images/hero.webp" alt="hero">
+                </picture>
+            </div>
+            <section id="msg">
+                <h1 class="title">Adventure awaits you</h1>
+            
+                <div class="button">
+                    <a href="reservastion.html">Reserve Now</a>
+                </div>
+            </section>
+        </class>
+
+            <div class="rental">
+                <h2>Rental Prices summary</h2>
+                <div class="rental-summary">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rental Type</th>
+                                <th>Max. Persons</th>
+                                <th>Half Day (3 hours)</th>
+                                <th>Full Day</th>
+                                <th>Half Day (3 hours) - Reservation</th>
+                                <th>Full Day - Reservation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Honda Metro Scooter</td>
+                                <td>1</td>
+                                <td>$20</td>
+                                <td>$30</td>
+                                <td>$25</td>
+                                <td>$35</td>
+                            </tr>
+                            <tr>
+                                <td>Honda Dio Scooter</td>
+                                <td>2</td>
+                                <td>$30</td>
+                                <td>$40</td>
+                                <td>$35</td>
+                                <td>$45</td>
+                            </tr>
+                            <tr>
+                                <td>Honda PCX150 Scooter</td>
+                                <td>2</td>
+                                <td>$40</td>
+                                <td>$50</td>
+                                <td>$45</td>
+                                <td>$55</td>
+                            </tr>
+                            <tr>
+                                <td>ATV Honda Pioneer</td>
+                                <td>4</td>
+                                <td>$50</td>
+                                <td>$70</td>
+                                <td>$60</td>
+                                <td>$80</td>
+                            </tr>
+                            <tr>
+                                <td>Jeep Wrangler - 4 door with A/C</td>
+                                <td>5</td>
+                                <td>$70</td>
+                                <td>$100</td>
+                                <td>$85</td>
+                                <td>$125</td>
+                            </tr>
+                            <tr>
+                                <td>Jeep Wrangler - 2 door</td>
+                                <td>4</td>
+                                <td>$60</td>
+                                <td>$85</td>
+                                <td>$70</td>
+                                <td>$90</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+        <div id="weather-info">
+            <h2>Weather Information</h2>
+            <p id="current-temperature">Loading...</p>
+            <p id="current-humidity">Loading...</p>
+            <p id="next-day-temperature">Loading...</p>
+            <p id="weather-description">Loading...</p>
+            <img id="weather-icon" src="#" alt="Weather Icon">
+        </div>
+    </main>
+    <footer>
+        <div class="myname">
+            <h4>©2024 | Harold Barraza Duran |</h4>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/AnyConv.com__facebook(1).webp" alt="Facebook icon">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/AnyConv.com__twitter(1).webp" alt="Twitter icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/AnyConv.com__instagram(1).webp" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

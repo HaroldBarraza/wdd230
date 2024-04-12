@@ -32,59 +32,59 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 
-const appid = 'eececc8fc440dba10c2cf1470581941c';
-const url = `https://api.openweathermap.org/data/2.5/forecast?lat=-12.04&lon=-77.04&units=metric&appid=${appid}`;
+    const appid = 'eececc8fc440dba10c2cf1470581941c';
+    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=-12.04&lon=-77.04&units=metric&appid=${appid}`;
 
-async function apiFetch() {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            displayResults(data);
+    async function apiFetch() {
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+                const data = await response.json();
+                displayResults(data);
+            }
+            else {
+                throw Error(await response.text());
+            }
         }
-        else {
-            throw Error(await response.text());
+        catch (error) {
+            console.log(error);
         }
     }
-    catch (error) {
-        console.log(error);
-    }
-}
-apiFetch();
+    apiFetch();
 
-function displayResults(data) {
-    const currentWeather = data.list[0];
-    const currentTemp = currentWeather.main.temp.toFixed(0);
-    const weatherDesc = currentWeather.weather[0].description;
-    const weatherIcon = currentWeather.weather[0].icon;
+    function displayResults(data) {
+        const currentWeather = data.list[0];
+        const currentTemp = currentWeather.main.temp.toFixed(0);
+        const weatherDesc = currentWeather.weather[0].description;
+        const weatherIcon = currentWeather.weather[0].icon;
 
-    document.getElementById('currentTemp').innerHTML = `Temperature: ${currentTemp}°C`;
-    document.getElementById('weatherDesc').textContent = `Description: ${weatherDesc}`;
+        document.getElementById('currentTemp').innerHTML = `Temperature: ${currentTemp}°C`;
+        document.getElementById('weatherDesc').textContent = `Description: ${weatherDesc}`;
 
-    const iconUrl = `https://openweathermap.org/img/w/${weatherIcon}.png`;
-    const weatherIconElement = document.getElementById('weatherIcon');
-    weatherIconElement.setAttribute('src', iconUrl);
-    weatherIconElement.setAttribute('alt', weatherDesc);
+        const iconUrl = `https://openweathermap.org/img/w/${weatherIcon}.png`;
+        const weatherIconElement = document.getElementById('weatherIcon');
+        weatherIconElement.setAttribute('src', iconUrl);
+        weatherIconElement.setAttribute('alt', weatherDesc);
 
-    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-    for (let i = 1; i <= 3; i++) {
-        const forecast = data.list[i];
-        const forecastDate = new Date(forecast.dt * 1000);
-        const forecastDay = daysOfWeek[forecastDate.getDay()];
-        const forecastTemp = forecast.main.temp.toFixed(0);
-        const forecastDesc = forecast.weather[0].description;
-        const forecastIcon = forecast.weather[0].icon;
+        for (let i = 1; i <= 3; i++) {
+            const forecast = data.list[i];
+            const forecastDate = new Date(forecast.dt * 1000);
+            const forecastDay = daysOfWeek[forecastDate.getDay()];
+            const forecastTemp = forecast.main.temp.toFixed(0);
+            const forecastDesc = forecast.weather[0].description;
+            const forecastIcon = forecast.weather[0].icon;
 
-        document.getElementById(`forecast-day${i}-temp`).textContent = `Temperature: ${forecastTemp}°C`;
-        document.getElementById(`forecast-day${i}-desc`).textContent = `Description: ${forecastDesc}`;
+            document.getElementById(`forecast-day${i}-temp`).textContent = `Temperature: ${forecastTemp}°C`;
+            document.getElementById(`forecast-day${i}-desc`).textContent = `Description: ${forecastDesc}`;
 
-        const forecastIconUrl = `https://openweathermap.org/img/w/${forecastIcon}.png`;
-        const forecastIconElement = document.getElementById(`forecast-day${i}-icon`);
-        forecastIconElement.setAttribute('src', forecastIconUrl);
-        forecastIconElement.setAttribute('alt', forecastDesc);
+            const forecastIconUrl = `https://openweathermap.org/img/w/${forecastIcon}.png`;
+            const forecastIconElement = document.getElementById(`forecast-day${i}-icon`);
+            forecastIconElement.setAttribute('src', forecastIconUrl);
+            forecastIconElement.setAttribute('alt', forecastDesc);
+        };
     };
-};
 
 
 document.addEventListener('DOMContentLoaded', function () {
